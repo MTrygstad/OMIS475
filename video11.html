@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+     body{background-color: #eaeaea;}
+            h1 {color:black; font-family: Arial, Helvetica, sans-serif; font-weight: bold;}
+            p{color:black; font-family: Arial, Helvetica, sans-serif;}
+            a{text-decoration: none; color: black; font-family: Arial, Helvetica, sans-serif;}
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+</style>
+<title>Princess and the Frog</title>
+</head>
+<body>
+        <center><h1>The Greatest Film Ever Made</h1></center>
+        <center><h2>Movie Review - March 2019</h2></center>
+        <center>
+<center>
+<video width="400" controls>
+  <source src="review.mp4" type="video/mp4">
+  <source src="review.ogg" type="video/ogg">
+  Your browser does not support HTML5 video.
+</video>
+
+<p>
+Watch the video above for why I love this movie!
+</p>
+<br>
+<br>
+
+<button class="collapsible">Click below for a transcription</button>
+<div class="content">
+  <p> Hello! Today I'm going to be talking about one of my favorite movies, Disney's 'Princess and the Frog'. I have loved
+    this movie ever since it game out. From the music, to the plot, to the character development...everything is just amazing.
+    It's a feel good movie that shows audiences of hard work and fulfilling your dreams. But it also shows us that sometimes
+    you need to take a break for things to truely work out. If you don't want to watch this movie for the plot than watch it for
+    the music. There are some beautiful piences and just over all fun sngs, which make for an amazing time. Well, that's all the time I have for today, thanks for watching!
+
+  </p>
+</div>
+</center>
+<script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+        </script>
+        
+        </body>
+        </html>
+        
